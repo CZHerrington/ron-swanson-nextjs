@@ -1,0 +1,104 @@
+// jq '[ .[] | {commit: { verified: .commit.verification.verified, sha: .sha, author: {name: .commit.author.name, login: .author.login, type: .author.type, avatarUrl: .author.avatar_url}, message: .commit.message, parents: .parents }} ]'
+
+[
+  {
+    "commit": {
+      "verified": false,
+      "sha": "e74eab828e658de3eca089f82b84fb67ed4c3a75",
+      "author": {
+        "name": "William Langford",
+        "login": "wtlangford",
+        "type": "User",
+        "avatarUrl": "https://avatars2.githubusercontent.com/u/3422295?v=4"
+      },
+      "message": "Fix nesting try/catch inside internal errors",
+      "parents": [
+        {
+          "sha": "bda75c3142d969e2a52301a1eaead0cc05ec2c13",
+          "url": "https://api.github.com/repos/stedolan/jq/commits/bda75c3142d969e2a52301a1eaead0cc05ec2c13",
+          "html_url": "https://github.com/stedolan/jq/commit/bda75c3142d969e2a52301a1eaead0cc05ec2c13"
+        }
+      ]
+    }
+  },
+  {
+    "commit": {
+      "verified": false,
+      "sha": "bda75c3142d969e2a52301a1eaead0cc05ec2c13",
+      "author": {
+        "name": "William Langford",
+        "login": "wtlangford",
+        "type": "User",
+        "avatarUrl": "https://avatars2.githubusercontent.com/u/3422295?v=4"
+      },
+      "message": "Ensure travis has a python version we expect",
+      "parents": [
+        {
+          "sha": "9b51a0852a0f91fbc987f5f2b302ff65e22f6399",
+          "url": "https://api.github.com/repos/stedolan/jq/commits/9b51a0852a0f91fbc987f5f2b302ff65e22f6399",
+          "html_url": "https://github.com/stedolan/jq/commit/9b51a0852a0f91fbc987f5f2b302ff65e22f6399"
+        }
+      ]
+    }
+  },
+  {
+    "commit": {
+      "verified": false,
+      "sha": "9b51a0852a0f91fbc987f5f2b302ff65e22f6399",
+      "author": {
+        "name": "Leonid S. Usov",
+        "login": null,
+        "type": null,
+        "avatarUrl": null
+      },
+      "message": "Remove an accidentally committed debug file",
+      "parents": [
+        {
+          "sha": "74c44bc9a35ff7da4481b6e8c5036c0ffa93aa17",
+          "url": "https://api.github.com/repos/stedolan/jq/commits/74c44bc9a35ff7da4481b6e8c5036c0ffa93aa17",
+          "html_url": "https://github.com/stedolan/jq/commit/74c44bc9a35ff7da4481b6e8c5036c0ffa93aa17"
+        }
+      ]
+    }
+  },
+  {
+    "commit": {
+      "verified": false,
+      "sha": "74c44bc9a35ff7da4481b6e8c5036c0ffa93aa17",
+      "author": {
+        "name": "William Langford",
+        "login": "wtlangford",
+        "type": "User",
+        "avatarUrl": "https://avatars2.githubusercontent.com/u/3422295?v=4"
+      },
+      "message": "Add configure guards around literal jv_numbers\n\nAllow building jq in a mode that doesn't use decnumber for benchmarking\npurposes. decnumber support is enabled by default, and this option is\nmeant to be removed once we're happy with the performance.",
+      "parents": [
+        {
+          "sha": "4860ed439605ded0964fad0ae7b43d0ae8600174",
+          "url": "https://api.github.com/repos/stedolan/jq/commits/4860ed439605ded0964fad0ae7b43d0ae8600174",
+          "html_url": "https://github.com/stedolan/jq/commit/4860ed439605ded0964fad0ae7b43d0ae8600174"
+        }
+      ]
+    }
+  },
+  {
+    "commit": {
+      "verified": false,
+      "sha": "4860ed439605ded0964fad0ae7b43d0ae8600174",
+      "author": {
+        "name": "Leonid S. Usov",
+        "login": null,
+        "type": null,
+        "avatarUrl": null
+      },
+      "message": "[tests] print test # from the start of the tests file to help with skip and take",
+      "parents": [
+        {
+          "sha": "cf4b48c7ba30cb30e116b523cff036ea481459f6",
+          "url": "https://api.github.com/repos/stedolan/jq/commits/cf4b48c7ba30cb30e116b523cff036ea481459f6",
+          "html_url": "https://github.com/stedolan/jq/commit/cf4b48c7ba30cb30e116b523cff036ea481459f6"
+        }
+      ]
+    }
+  }
+]
