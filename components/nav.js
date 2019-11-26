@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 
 const links = [
-  {href: '/about', label: 'About Us'},
   {href: '/quotes', label: 'Ron Swanson Quotes'},
+  {href: '/about', label: 'About Us'},
   { href: 'https://github.com/zeit/next.js', label: 'GitHub' },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
