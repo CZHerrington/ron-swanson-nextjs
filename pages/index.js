@@ -2,134 +2,35 @@ import React from "react";
 import Head from "next/head";
 import Nav from "../components/nav";
 
-const Card = ({ title, description }) => {
-    return (
-        <>
-            <span className="card">
-                <h3>{title} &rarr;</h3>
-                <p>{description}</p>
-            </span>
-            <style jsx>{`
-            .card {
-              padding: 18px 18px 24px;
-              width: 220px;
-              text-align: left;
-              text-decoration: none;
-              color: #434343;
-              border: 1px solid #9b9b9b;
-          }
-          .card:hover {
-              border-color: #067df7;
-          }
-          .card h3 {
-              margin: 0;
-              color: #067df7;
-              font-size: 18px;
-          }
-          .card p {
-              margin: 0;
-              padding: 12px 0 0;
-              font-size: 13px;
-              color: #333;
-          }
-            `}</style>
-        </>
-    );
-};
-
-const Row = ({ children }) => (
-    <>
-        <div className="row">{children}</div>
-        <style jsx>{`
-            .row {
-                max-width: 880px;
-                margin: 80px auto 40px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-        `}</style>
-    </>
-);
+function getAlert(image) {
+    alert('You are hovering on the image on the webpage')
+  }
 
 const Home = () => (
     <div>
         <Head>
-            <title>Home</title>
+            <title>Ron</title>
             <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <Nav />
-
-        <div className="hero">
-            <h1 className="title">Welcome to Next.js!</h1>
-            <p className="description">
-                To get started, edit <code>pages/index.js</code> and save to
-                reload.
-            </p>
-            <Row>
-                <Card
-                    url="https://nextjs.org/docs"
-                    title="Documentation"
-                    description="Learn more about Next.js in the documentation."
-                />
-                                <Card
-                    url="https://nextjs.org/docs"
-                    title="Documentation"
-                    description="Learn more about Next.js in the documentation."
-                />
-                                <Card
-                    url="https://nextjs.org/docs"
-                    title="Documentation"
-                    description="Learn more about Next.js in the documentation."
-                />
-            </Row>
+        <Nav /> 
+        <div>
+        <img onMouseOver={getAlert}src="/ronBackground.jpeg"></img>
+        <div>
+            <p>Something useless</p>
         </div>
+        </div>
+        
 
         <style jsx>{`
-            .hero {
+            img {
+                height: 45rem;
                 width: 100%;
-                color: #333;
+                box-shadow: 5px 5px 5px 5px black;
             }
-            .title {
-                margin: 0;
-                width: 100%;
-                padding-top: 80px;
-                line-height: 1.15;
-                font-size: 48px;
-            }
-            .title,
-            .description {
-                text-align: center;
-            }
-            .row {
-                max-width: 880px;
-                margin: 80px auto 40px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-            }
-            .card {
-                padding: 18px 18px 24px;
-                width: 220px;
-                text-align: left;
-                text-decoration: none;
-                color: #434343;
-                border: 1px solid #9b9b9b;
-            }
-            .card:hover {
-                border-color: #067df7;
-            }
-            .card h3 {
-                margin: 0;
-                color: #067df7;
-                font-size: 18px;
-            }
-            .card p {
-                margin: 0;
-                padding: 12px 0 0;
-                font-size: 13px;
-                color: #333;
+            img:hover {
+                border-radius: 5px;
+                transform: rotate(180deg);
             }
         `}</style>
     </div>

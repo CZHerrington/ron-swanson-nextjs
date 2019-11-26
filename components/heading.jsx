@@ -7,6 +7,7 @@ const Heading = ({text}) => {
             h1 {
                 font-size: 48px;
                 font-family: sans-serif;
+                text-align: center;
             }
         `}</style>
     </>);
